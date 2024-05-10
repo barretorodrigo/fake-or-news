@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import axios from "axios";
 
-const baseURL = "http://localhost:8000/";
+const baseURL = "https://fake-or-news-73580b2dee76.herokuapp.com/";
 
 function App() { 
 
