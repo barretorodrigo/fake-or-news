@@ -75,3 +75,7 @@ async def root(text: Text):
 
     response = model.generate_content(prompt_parts)
     return {"message": response.text}
+  
+@app.get("/")
+async def root():
+    return {"status": "ok"}
