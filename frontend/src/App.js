@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from "axios";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const baseURL = "https://fake-or-news-73580b2dee76.herokuapp.com/";
 
@@ -42,6 +43,7 @@ function App() {
   }, [result]);
   return (
     <div className="App">
+      <SpeedInsights/>
       <div class="bg-gray-900">
         <div class="mx-auto max-w-6xl pt-0 pb-24 sm:px-6 md:py-24 lg:px-8">
           <div class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16  shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
